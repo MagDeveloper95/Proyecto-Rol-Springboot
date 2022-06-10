@@ -3,5 +3,23 @@
   <groupId>com.RolMiddle</groupId>
   <artifactId>MM</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>com.RolMiddle.MM.Main</name>
+  <name>com.RolMiddle.MM</name>
+  <dependencies>
+  <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-logging</artifactId>
+				</exclusion>
+			</exclusions>
+			<version>2.3.12.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-boot-starter</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+  </dependencies>
 </project>
